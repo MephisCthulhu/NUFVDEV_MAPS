@@ -1,0 +1,25 @@
+CRITICAL - 2023-04-23 16:23:12 --> syntax error, unexpected variable "$default", expecting "function" or "const"
+in APPPATH\Config\Database.php on line 23.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(289): CodeIgniter\Autoloader\Autoloader->includeFile()
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(267): CodeIgniter\Autoloader\Autoloader->loadInNamespace()
+ 3 SYSTEMPATH\Debug\Toolbar\Collectors\Database.php(251): CodeIgniter\Autoloader\Autoloader->loadClass()
+ 4 SYSTEMPATH\Debug\Toolbar\Collectors\Database.php(70): CodeIgniter\Debug\Toolbar\Collectors\Database->getConnections()
+ 5 SYSTEMPATH\Debug\Toolbar.php(65): CodeIgniter\Debug\Toolbar\Collectors\Database->__construct()
+ 6 SYSTEMPATH\Config\Services.php(723): CodeIgniter\Debug\Toolbar->__construct()
+ 7 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::toolbar()
+ 8 SYSTEMPATH\Config\BaseService.php(193): CodeIgniter\Config\BaseService::__callStatic()
+ 9 SYSTEMPATH\Config\Services.php(718): CodeIgniter\Config\BaseService::getSharedInstance()
+10 SYSTEMPATH\Config\BaseService.php(252): CodeIgniter\Config\Services::toolbar()
+11 APPPATH\Config\Events.php(46): CodeIgniter\Config\BaseService::__callStatic()
+12 SYSTEMPATH\Events\Events.php(149): CodeIgniter\Events\Events::Config\{closure}()
+13 SYSTEMPATH\CodeIgniter.php(350): CodeIgniter\Events\Events::trigger()
+14 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\mapsv2\\public\\index.php')
+CRITICAL - 2023-04-23 16:25:23 --> syntax error, unexpected identifier "login", expecting ")"
+in APPPATH\Config\Routes.php on line 32.
+ 1 SYSTEMPATH\CodeIgniter.php(802): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 2 SYSTEMPATH\CodeIgniter.php(449): CodeIgniter\CodeIgniter->tryToRouteIt()
+ 3 SYSTEMPATH\CodeIgniter.php(368): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH\index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp\\htdocs\\mapsv2\\public\\index.php')
+INFO - 2023-04-23 16:26:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
