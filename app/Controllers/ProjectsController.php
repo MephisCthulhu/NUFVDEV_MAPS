@@ -9,6 +9,6 @@ class ProjectsController extends BaseController
     public function index() {
 
         echo view('projects');
-
+        $this->load->database();
     }
 }

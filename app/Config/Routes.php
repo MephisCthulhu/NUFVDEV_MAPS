@@ -32,7 +32,7 @@ $routes->set404Override();
 
 //navbar
 $routes->get('/', 'LoginController::index');
-$routes->get('home', 'LoginController::home');
+$routes->get('home', 'LoginController::index');
 $routes->get('projects', 'ProjectsController::index');
 $routes->get('scheduler', 'SchedulerController::index');
 $routes->get('manageaccount', 'ManageAccController::index');
