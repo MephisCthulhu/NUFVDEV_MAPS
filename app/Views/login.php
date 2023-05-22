@@ -26,12 +26,12 @@
                         <form action="<?= route_to('login') ?>" method="post">
                             <?= csrf_field() ?>
                             <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" class="form-control" id="email" name="email" required>
+                                <label for="email">Username or Email</label>
+                                <input type="email" class="form-control" id="Username" name="Username" required>
                             </div>
                             <div class="form-group">
                                 <label for="password">Password</label>
-                                <input type="password" class="form-control" id="password" name="password" required>
+                                <input type="password" class="form-control" id="Password" name="Password" required>
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="btn btn-primary btn-block">Login</button>

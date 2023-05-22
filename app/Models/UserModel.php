@@ -6,22 +6,22 @@ use CodeIgniter\Model;
 
 class UserModel extends Model
 {
-    protected $table = 'users';
+    protected $table = 'account';
     protected $primaryKey = 'id';
-    protected $allowedFields = ['username', 'email', 'password'];
+    protected $allowedFields = ['Username', 'email', 'Password'];
 
-    public function getUserByUsername($username)
+    public function getUserByUsername($Username)
     {
-        return $this->where('username', $username)->first();
+        return $this->where('Username', $Username)->first();
     }
 
     public function getUserByEmail($email)
     {
         return $this->where('email', $email)->first();
     }
-    public function getPassword($password)
+    public function getPassword($Password)
         {
-            return $this->where('password', $password)->first();
+            return $this->where('Password', $Password)->first();
         }
 }
 

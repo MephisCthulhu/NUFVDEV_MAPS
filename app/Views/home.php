@@ -45,7 +45,7 @@
   <div class="container mt-5">
 
     <div>
-
+    <img src="app/Views/banner.jpg>" alt="Banner image">
     </div>
 
     <div class="row">
